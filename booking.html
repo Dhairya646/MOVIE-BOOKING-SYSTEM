@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SPATS MOVIE CENTER</div>
+        <nav class="nav">
+            <a href="#">Movies</a>
+            <a href="#">Events</a>
+            <a href="mailto:dhairyadubey567@gmail.com">Contact</a>
+        </nav>
+    </header>
+
+    <section class="booking">
+        <div class="seat-area">
+            <div class="screen">
+                SCREEN
+            </div>
+            <div class="seats">
+                <div class="row">
+                    <div class="first-row">
+                        <div class="a">
+                            <span class="row-label">A</span>
+                            <div class="seat" data-seat="A1"></div>
+                            <div class="seat" data-seat="A2"></div>
+                            <div class="seat booked" data-seat="A3"></div>
+                            <div class="seat" data-seat="A4"></div>
+                            <div class="seat" data-seat="A5"></div>
+                        </div>
+                        <div class="a">
+                            <div class="seat" data-seat="A6"></div>
+                            <div class="seat" data-seat="A7"></div>
+                            <div class="seat booked" data-seat="A8"></div>
+                            <div class="seat"data-seat="A9" ></div>
+                            <div class="seat" data-seat="A10"></div>
+                        </div>
+                        <div class="a">
+                            <div class="seat" data-seat="A11"></div>
+                            <div class="seat" data-seat="A12"></div>
+                            <div class="seat booked" data-seat="A13"></div>
+                            <div class="seat" data-seat="A14"></div>
+                            <div class="seat" data-seat="A15"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="second-row">
+                        <div class="b">
+                            <span class="row-label">B</span>
+                            <div class="seat" data-seat="B1"></div>
+                            <div class="seat booked" data-seat="B2"></div>
+                            <div class="seat" data-seat="B3"></div>
+                            <div class="seat" data-seat="B4"></div>
+                            <div class="seat" data-seat="B5"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="seat" data-seat="B6"></div>
+                            <div class="seat booked" data-seat="B7"></div>
+                            <div class="seat" data-seat="B8"></div>
+                            <div class="seat" data-seat="B9"></div>
+                            <div class="seat" data-seat="B10"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="seat" data-seat="B11"></div>
+                            <div class="seat booked" data-seat="B12"></div>
+                            <div class="seat" data-seat="B13"></div>
+                            <div class="seat" data-seat="B14"></div>
+                            <div class="seat" data-seat="B15"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="third-row">
+                        <div class="c">
+                            <span class="row-label">C</span>
+                            <div class="seat" data-seat="C1"></div>
+                            <div class="seat" data-seat="C2"></div>
+                            <div class="seat" data-seat="C3"></div>
+                            <div class="seat booked" data-seat="C4"></div>
+                            <div class="seat" data-seat="C5"></div>
+                        </div>
+
+                        <div class="c">
+                            <div class="seat" data-seat="C6"></div>
+                            <div class="seat" data-seat="C7"></div>
+                            <div class="seat" data-seat="C8"></div>
+                            <div class="seat booked" data-seat="C9"></div>
+                            <div class="seat" data-seat="C10"></div>
+                        </div>
+
+                        <div class="c">
+                            <div class="seat" data-seat="C11"></div>
+                            <div class="seat" data-seat="C12"></div>
+                            <div class="seat" data-seat="C13"></div>
+                            <div class="seat booked" data-seat="C14"></div>
+                            <div class="seat" data-seat="C15"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legend">
+                <span><i class="seat"></i>Available</span>
+                <span><i class="seat select"></i>Selected</span>
+                <span><i class="seat book"></i>Booked</span>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="ticket">
+                <h2>Ticket Summary</h2>
+            </div>
+            <div class="rest-details">
+                <p>Movie Title:</p>
+                <p> <strong>Interstellar</strong></p>
+                <p>Date and Time:</p> 
+                <p><strong>28th February 2026 14:00</strong></p>
+                <p>Seats Selected: <span id="seatCount">0</span></p>
+                <p id="selectedSeats">None</p>
+                <p>Total Price: Rs. <span id="totalPrice">0</span></p>
+                <button class="btn" id="confirmBtn" disabled>Confirm Booking</button>
+                <button class="btn" id="resetBtn">Reset Selection</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="details">
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="mailto:dhairyadubey567@gmail.com">Contact</a>
+        </div>
+        <p>2026 Space Technology Students' Society. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
